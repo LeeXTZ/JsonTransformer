@@ -1,0 +1,1340 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "MyTravleAgent",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "book"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [
+    {
+      "name": "budget"
+    },
+    {
+      "name": "dst_city"
+    },
+    {
+      "name": "or_city"
+    },
+    {
+      "name": "str_date"
+    },
+    {
+      "name": "n_adults"
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [
+    "datetimeV2",
+    "number"
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "I'd like to book a trip to Atlantis from Caprica on Saturday, August 13, 2016 for 8 adults. I have a tight budget of 1700.",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "budget",
+          "startPos": 117,
+          "endPos": 120
+        },
+        {
+          "entity": "dst_city",
+          "startPos": 27,
+          "endPos": 34
+        },
+        {
+          "entity": "or_city",
+          "startPos": 41,
+          "endPos": 47
+        },
+        {
+          "entity": "n_adults",
+          "startPos": 82,
+          "endPos": 82
+        }
+      ]
+    },
+    {
+      "text": "Hello, I am looking to book a vacation from Gotham City to Mos Eisley for $2100.",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "budget",
+          "startPos": 75,
+          "endPos": 78
+        },
+        {
+          "entity": "dst_city",
+          "startPos": 59,
+          "endPos": 68
+        },
+        {
+          "entity": "or_city",
+          "startPos": 44,
+          "endPos": 54
+        }
+      ]
+    },
+    {
+      "text": "Hello there i am looking to go on a vacation with my family to Gotham City, can you help me?",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 63,
+          "endPos": 73
+        }
+      ]
+    },
+    {
+      "text": "Hi I'd like to go to Caprica from Busan, between Sunday August 21, 2016 and Wednesday August 31, 2016",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 21,
+          "endPos": 27
+        },
+        {
+          "entity": "or_city",
+          "startPos": 34,
+          "endPos": 38
+        }
+      ]
+    },
+    {
+      "text": "Hello, I am looking to book a trip for 2 adults and 6 children for $21,300 or less. We are departing from Kochi for Denver.",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "budget",
+          "startPos": 68,
+          "endPos": 69
+        },
+        {
+          "entity": "dst_city",
+          "startPos": 116,
+          "endPos": 121
+        },
+        {
+          "entity": "or_city",
+          "startPos": 106,
+          "endPos": 110
+        },
+        {
+          "entity": "n_adults",
+          "startPos": 39,
+          "endPos": 39
+        }
+      ]
+    },
+    {
+      "text": "Hey, i Want to go to St. Louis on the 17th of August",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 21,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "I'm looking for a trip to Gotham City leaving from Kakariko Village on Saturday, August 13, 2016. 3 adults for no more than $2400 .",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "budget",
+          "startPos": 125,
+          "endPos": 128
+        },
+        {
+          "entity": "dst_city",
+          "startPos": 26,
+          "endPos": 36
+        },
+        {
+          "entity": "or_city",
+          "startPos": 51,
+          "endPos": 66
+        }
+      ]
+    },
+    {
+      "text": "Hello, I would like to book a 2-week trip leaving from Melbourne on August 27. I would like to go to Mannheim.",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 101,
+          "endPos": 108
+        },
+        {
+          "entity": "or_city",
+          "startPos": 55,
+          "endPos": 63
+        }
+      ]
+    },
+    {
+      "text": "Hello, I am planning to book a trip to pittsborgh",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 39,
+          "endPos": 48
+        }
+      ]
+    },
+    {
+      "text": "Hi, I need to go to Mos Eisley for a wedding, leaving on Saturday, August 13, 2016 and returning on Tuesday, August 16, 2016. Preferably for $3700.",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "budget",
+          "startPos": 142,
+          "endPos": 145
+        },
+        {
+          "entity": "dst_city",
+          "startPos": 20,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "I'd like to get away from Monday, August 15, 2016 to Wednesday, August 31, 2016. My budget is $3200 and I would leave from Detroit.",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "budget",
+          "startPos": 95,
+          "endPos": 98
+        },
+        {
+          "entity": "or_city",
+          "startPos": 123,
+          "endPos": 129
+        }
+      ]
+    },
+    {
+      "text": "Good day, please book me a trip from Vancouver, Jamaica to Recife. I would like to leave for 17 days on August 24.",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 59,
+          "endPos": 64
+        },
+        {
+          "entity": "or_city",
+          "startPos": 37,
+          "endPos": 54
+        }
+      ]
+    },
+    {
+      "text": "Hi im looking for a nice destination that i could go to from Columbus",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "or_city",
+          "startPos": 61,
+          "endPos": 68
+        }
+      ]
+    },
+    {
+      "text": "Hi, I have a big family and we can't afford a big vacation, we want to go to Atlantis from Mos Eisley for $3600 at most.",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "budget",
+          "startPos": 107,
+          "endPos": 110
+        },
+        {
+          "entity": "dst_city",
+          "startPos": 77,
+          "endPos": 84
+        },
+        {
+          "entity": "or_city",
+          "startPos": 91,
+          "endPos": 100
+        }
+      ]
+    },
+    {
+      "text": "Hi, I'm leaving from Diagon Alley and going to Coruscant on a budget of $3400. The dates don't matter, but I cannot afford anything over my budget.",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "budget",
+          "startPos": 73,
+          "endPos": 76
+        },
+        {
+          "entity": "dst_city",
+          "startPos": 47,
+          "endPos": 55
+        },
+        {
+          "entity": "or_city",
+          "startPos": 21,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "Hi there, im from Vitoria and I want to go on vacation",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "or_city",
+          "startPos": 18,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "Hi, me and my family want to take a trip to Kakariko Village.",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 44,
+          "endPos": 59
+        }
+      ]
+    },
+    {
+      "text": "Hi, I'm looking for a trip  from Thursday, August 18, 2016 to Thursday, September 8, 2016 to Mexico City",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 93,
+          "endPos": 103
+        }
+      ]
+    },
+    {
+      "text": "Hi im from Caprica looking to book a vacation to Hyrule",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 49,
+          "endPos": 54
+        },
+        {
+          "entity": "or_city",
+          "startPos": 11,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "Hey man, imma leave from Godric's Hollow on August 27, 2016 and go to Goiania. Can't pay more than 4300. Watcha got?",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "budget",
+          "startPos": 99,
+          "endPos": 102
+        },
+        {
+          "entity": "dst_city",
+          "startPos": 70,
+          "endPos": 76
+        },
+        {
+          "entity": "or_city",
+          "startPos": 25,
+          "endPos": 39
+        }
+      ]
+    },
+    {
+      "text": "HI im from Alexandria looking to book a 12 day vacation",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "or_city",
+          "startPos": 11,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "Hi im from termina can we find a vacation that starts on the 13th?",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "or_city",
+          "startPos": 11,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "Hi. I'm looking for an adventure from Thursday, August 18 to Saturday, September 3. I'm thinking of going to Fortaleza. Yes, with free breakfast of course. I'm leaving from Essen.",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 109,
+          "endPos": 117
+        },
+        {
+          "entity": "or_city",
+          "startPos": 173,
+          "endPos": 177
+        }
+      ]
+    },
+    {
+      "text": "Hi, my name is Harry Potter and I'd like to go to Hogsmeade leaving from Kakariko Village on Saturday, August 13th for 3 nights with 11 friends.",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 50,
+          "endPos": 58
+        },
+        {
+          "entity": "or_city",
+          "startPos": 73,
+          "endPos": 88
+        },
+        {
+          "entity": "n_adults",
+          "startPos": 133,
+          "endPos": 134
+        }
+      ]
+    },
+    {
+      "text": "Hi looking to go on vacation on the 13th of august",
+      "intent": "book",
+      "entities": []
+    },
+    {
+      "text": "Hi. I live in Busan and I'd like to go to Las Vegas from Wednesday August 17 to Monday September 5. What's available?",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 42,
+          "endPos": 50
+        },
+        {
+          "entity": "or_city",
+          "startPos": 14,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "Hello, I want to leave from Seoul on August 27 and return on September 9. You can go to Manaus.",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 88,
+          "endPos": 93
+        },
+        {
+          "entity": "or_city",
+          "startPos": 28,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "I'm a polygamist and I'd like to travel with my 6 partners and 1 child to San Juan from Pittsburgh on a budget of 6600 ",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "budget",
+          "startPos": 114,
+          "endPos": 117
+        },
+        {
+          "entity": "dst_city",
+          "startPos": 74,
+          "endPos": 81
+        },
+        {
+          "entity": "or_city",
+          "startPos": 88,
+          "endPos": 97
+        },
+        {
+          "entity": "n_adults",
+          "startPos": 48,
+          "endPos": 48
+        }
+      ]
+    },
+    {
+      "text": "Hi, send me on a 10 day-trip away from Cairo. I'd like to leave August 15. Send me to Sendai. Money is not object",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 86,
+          "endPos": 91
+        },
+        {
+          "entity": "or_city",
+          "startPos": 39,
+          "endPos": 43
+        }
+      ]
+    },
+    {
+      "text": "Good afternoon, I'd like to book a trip with my son from August 18 to August 29. He and I would be leaving from Curitiba. What destinations can you offer?",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "or_city",
+          "startPos": 112,
+          "endPos": 119
+        }
+      ]
+    },
+    {
+      "text": "Hi, my family and i are booking a trip to Sacramento, can you help us?",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 42,
+          "endPos": 51
+        }
+      ]
+    },
+    {
+      "text": "Hi I need a break from Gotham City, the crime rate is just too high. I'd like to go to Hogsmead with 3 kids and 9 adults.",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 87,
+          "endPos": 94
+        },
+        {
+          "entity": "or_city",
+          "startPos": 23,
+          "endPos": 33
+        },
+        {
+          "entity": "n_adults",
+          "startPos": 112,
+          "endPos": 112
+        }
+      ]
+    },
+    {
+      "text": "Hello, I have 15 vacation days available between June 1st and August 31st. I am leaving from Theed. I would like to go somewhere with lots of sunshine.",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "or_city",
+          "startPos": 93,
+          "endPos": 97
+        }
+      ]
+    },
+    {
+      "text": "Hello! I live in Munich and I'd like to book any kind of trip between Monday, August 15th and Friday August 26th for 3 adults and 3 kids.",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "or_city",
+          "startPos": 17,
+          "endPos": 22
+        },
+        {
+          "entity": "n_adults",
+          "startPos": 117,
+          "endPos": 117
+        }
+      ]
+    },
+    {
+      "text": "Hi im from punta cana looking to go on a trip",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "or_city",
+          "startPos": 11,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "Hey! You can help me by finding a trip to Philadelphia from Maceio.",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 42,
+          "endPos": 53
+        },
+        {
+          "entity": "or_city",
+          "startPos": 60,
+          "endPos": 65
+        }
+      ]
+    },
+    {
+      "text": "Good afternoon. I'd like to book a business trip to New York from Mannheim. What can you offer?",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 52,
+          "endPos": 59
+        },
+        {
+          "entity": "or_city",
+          "startPos": 66,
+          "endPos": 73
+        }
+      ]
+    },
+    {
+      "text": "I would like a vacation for one in Mannheim from August 17 to September 7. My city of departure is Porto Alegre. It should cost less than $3000.",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "budget",
+          "startPos": 139,
+          "endPos": 142
+        },
+        {
+          "entity": "dst_city",
+          "startPos": 35,
+          "endPos": 42
+        },
+        {
+          "entity": "or_city",
+          "startPos": 99,
+          "endPos": 110
+        }
+      ]
+    },
+    {
+      "text": "Hi I am planning on booking a vacation soon, around August 27th",
+      "intent": "book",
+      "entities": []
+    },
+    {
+      "text": "Hi! I hear Hogsmeade has some excellent bars. Can you book me a trip there from Diagon Alley, leaving on August 13th? For 7 men and women",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 11,
+          "endPos": 19
+        },
+        {
+          "entity": "or_city",
+          "startPos": 80,
+          "endPos": 91
+        },
+        {
+          "entity": "n_adults",
+          "startPos": 122,
+          "endPos": 122
+        }
+      ]
+    },
+    {
+      "text": "Hi!",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "We are 3 adults and three kids looking for a vacation between August 18 and September 4",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "n_adults",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "hi I\u2019m looking to go on a trip to Caprica",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 34,
+          "endPos": 40
+        }
+      ]
+    },
+    {
+      "text": "Hi! I'd like to go to Boston from Mos Eisley on August 15th.",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 22,
+          "endPos": 27
+        },
+        {
+          "entity": "or_city",
+          "startPos": 34,
+          "endPos": 43
+        }
+      ]
+    },
+    {
+      "text": "Hi im looking to make a quick trip im from tampa and want to go to Dallas",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 67,
+          "endPos": 72
+        },
+        {
+          "entity": "or_city",
+          "startPos": 43,
+          "endPos": 47
+        }
+      ]
+    },
+    {
+      "text": "Hi im from Leon and looking to get away",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "or_city",
+          "startPos": 11,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "I'd like to go to Manaus from Miami between August 19th and September 2nd.",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 18,
+          "endPos": 23
+        },
+        {
+          "entity": "or_city",
+          "startPos": 30,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "I am one person voyaging to Tampa. I can depart from Indianapolis. Must be between 20th and 31 August.",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 28,
+          "endPos": 32
+        },
+        {
+          "entity": "or_city",
+          "startPos": 53,
+          "endPos": 64
+        }
+      ]
+    },
+    {
+      "text": "Heyo!",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "Hi! I'm looking for a trip to Milan with two of my best friends for march break, what's available?",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 30,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "Hello there! Looking to get away between August 27th and August 30th! Can you help me?",
+      "intent": "book",
+      "entities": []
+    },
+    {
+      "text": "Hi going on vacation with my Family can you help me book a vacation?",
+      "intent": "book",
+      "entities": []
+    },
+    {
+      "text": "Good morning.",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "I am from London and am looking to book a vacation package!",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "or_city",
+          "startPos": 10,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "I want to book a trip to Valencia!",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 25,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "Hi. I am in dire need of a vacation.",
+      "intent": "book",
+      "entities": []
+    },
+    {
+      "text": "Hi. I need to book a vacation to Long Beach between August 25 and September 3. Departure is from Paris",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 33,
+          "endPos": 42
+        },
+        {
+          "entity": "or_city",
+          "startPos": 97,
+          "endPos": 101
+        }
+      ]
+    },
+    {
+      "text": "Hi! I'd like to do some vacation shopping!",
+      "intent": "book",
+      "entities": []
+    },
+    {
+      "text": "Hi i am planning my honeymoon for my wife and myself. I am looking for the best deal but it needs to be the best time! can you helo us?",
+      "intent": "book",
+      "entities": []
+    },
+    {
+      "text": "Hey Im looking for a nice get away can you help me?",
+      "intent": "book",
+      "entities": []
+    },
+    {
+      "text": "The police are after me, and I need to leave Kobe between August 27 and September 2.",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "or_city",
+          "startPos": 45,
+          "endPos": 48
+        }
+      ]
+    },
+    {
+      "text": "Hi we're from Miami and we want to go to paris, can you help out?",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 41,
+          "endPos": 45
+        },
+        {
+          "entity": "or_city",
+          "startPos": 14,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "Hi im looking to go to Fukuoka",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 23,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "Hello wozbot!",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "Hi im going on SPRIINGGG BREAK! can you help me and my friends book a package?",
+      "intent": "book",
+      "entities": []
+    },
+    {
+      "text": "Hi wozbot. I'd like to book a vacation for my 7 kids and myself.",
+      "intent": "book",
+      "entities": []
+    },
+    {
+      "text": "Hi im looking to book my Honeymoon",
+      "intent": "book",
+      "entities": []
+    },
+    {
+      "text": "Hi wozbot! I'd like to book a spring break vacation for myself and 3 of my best friends",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "n_adults",
+          "startPos": 67,
+          "endPos": 67
+        }
+      ]
+    },
+    {
+      "text": "Hi im planning my Spring break can you help me find the best deals?",
+      "intent": "book",
+      "entities": []
+    },
+    {
+      "text": "Hi 7 colleagues and i are planning on going on a trip can you help?",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "n_adults",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "Hi wozbot! My husband and I are recently married and madly in love. We're looking for a fantastic honeymoon vacation. We live in Mannheim and we'd like to go to Kyoto for 6 days leaving on August 19. What can you do for me?",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 161,
+          "endPos": 165
+        },
+        {
+          "entity": "or_city",
+          "startPos": 129,
+          "endPos": 136
+        }
+      ]
+    },
+    {
+      "text": "hi im from Coruscant looking to go to atlantis",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 38,
+          "endPos": 45
+        },
+        {
+          "entity": "or_city",
+          "startPos": 11,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "HI im from Punta Cana can you help me find a vacation",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "or_city",
+          "startPos": 11,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "I want to get away for a bit! im from Houston",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "or_city",
+          "startPos": 38,
+          "endPos": 44
+        }
+      ]
+    },
+    {
+      "text": "I live in Toronto, can we se what packages are available in Cairo from August 17 to September 7?",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 60,
+          "endPos": 64
+        },
+        {
+          "entity": "or_city",
+          "startPos": 10,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "Hi i need a 5 day get away!",
+      "intent": "book",
+      "entities": []
+    },
+    {
+      "text": "HI there! my family and i are looking to go to Burlington",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 47,
+          "endPos": 56
+        }
+      ]
+    },
+    {
+      "text": "Hi im looking to book  trip. anything leaving from Kakariko Village?",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "or_city",
+          "startPos": 51,
+          "endPos": 66
+        }
+      ]
+    },
+    {
+      "text": "Good afternoon, my man! I'd like to plan a honeymoon in Naples for 5 days leaving from Madrid on August 17. What is available?",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 56,
+          "endPos": 61
+        },
+        {
+          "entity": "or_city",
+          "startPos": 87,
+          "endPos": 92
+        }
+      ]
+    },
+    {
+      "text": "Hi i want to plan my honeymoon to rome",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 34,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "Hi im from Houston and i want to go to San Antonio, but i have strict dates can you help?",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 39,
+          "endPos": 49
+        },
+        {
+          "entity": "or_city",
+          "startPos": 11,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "Hi im from Los Angeles. looking for a good vacation",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "or_city",
+          "startPos": 11,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "I have 11 days of time off starting on August 17. Can you offer me any vacation packages leaving from Portland?",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "or_city",
+          "startPos": 102,
+          "endPos": 109
+        }
+      ]
+    },
+    {
+      "text": "Hi im travelling from Nagoya. i would like to go on vacation on August 26th",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "or_city",
+          "startPos": 22,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "Hi! I have a $3300 budget and am looking for a vacation",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "budget",
+          "startPos": 14,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "Hi im looking to go on a trip to baltimore",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 33,
+          "endPos": 41
+        }
+      ]
+    },
+    {
+      "text": "My name is Gary Peter and I'd like to book a trip to Diagon Alley from Godric's Hollow on August 13th.",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 53,
+          "endPos": 64
+        },
+        {
+          "entity": "or_city",
+          "startPos": 71,
+          "endPos": 85
+        }
+      ]
+    },
+    {
+      "text": "Hi! My 3 best friends and I are looking for a trip to Neverland between August 16 and 19 on a very tight budget of $3500. What can you do for us?",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "budget",
+          "startPos": 116,
+          "endPos": 119
+        },
+        {
+          "entity": "dst_city",
+          "startPos": 54,
+          "endPos": 62
+        },
+        {
+          "entity": "n_adults",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "Hi im from Barkcelona, looking for a trip!",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "or_city",
+          "startPos": 11,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "hi i want to go on vacation i leave from cancun",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "or_city",
+          "startPos": 41,
+          "endPos": 46
+        }
+      ]
+    },
+    {
+      "text": "Hi im taking the family on a trip to Manaus is that possible with a budget of $3900",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "budget",
+          "startPos": 79,
+          "endPos": 82
+        },
+        {
+          "entity": "dst_city",
+          "startPos": 37,
+          "endPos": 42
+        }
+      ]
+    },
+    {
+      "text": "Hi looking for a vacation to hamburg",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 29,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "Hello, I'd like to book a trip to Mos Eisley from Hogsmeade on August 13.",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 34,
+          "endPos": 43
+        },
+        {
+          "entity": "or_city",
+          "startPos": 50,
+          "endPos": 58
+        }
+      ]
+    },
+    {
+      "text": "Hi! I'd like to plan my honeymoon, but I've spent way too much on my wedding and need to stick to a budget of $4600. Can you offer anything to Marseille for 5 days leaving from Salvador on August 17?",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "budget",
+          "startPos": 111,
+          "endPos": 114
+        },
+        {
+          "entity": "dst_city",
+          "startPos": 143,
+          "endPos": 151
+        },
+        {
+          "entity": "or_city",
+          "startPos": 177,
+          "endPos": 184
+        }
+      ]
+    },
+    {
+      "text": "Hi im fro termina and i want to go on vacation on August 13th",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "or_city",
+          "startPos": 10,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "Hi i am looking to go to Punta Cana with my three friends",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 25,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "Hello, I'd like to go to Birmingham for 7 days on my honeymoon, leaving from Denver on August 18. What can you offer?",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 25,
+          "endPos": 34
+        },
+        {
+          "entity": "or_city",
+          "startPos": 77,
+          "endPos": 82
+        }
+      ]
+    },
+    {
+      "text": "Hi im from neverland! and i want to go to Mos eisley",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 42,
+          "endPos": 51
+        },
+        {
+          "entity": "or_city",
+          "startPos": 11,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "hello! were leaving from Brasilia and looking to book our honeymoon",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "or_city",
+          "startPos": 25,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "Hi im in the middle of travelling  and i want to go to Porto!",
+      "intent": "book",
+      "entities": [
+        {
+          "entity": "dst_city",
+          "startPos": 55,
+          "endPos": 59
+        }
+      ]
+    }
+  ]
+}
